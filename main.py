@@ -1,6 +1,6 @@
 ﻿
 from pathlib import Path
-https://github.com/SAENZJORDY/aspersud-portal/tree/mainfrom io import BytesIO
+https://from io import BytesIO
 from typing import Literal
 from urllib.parse import quote
 
