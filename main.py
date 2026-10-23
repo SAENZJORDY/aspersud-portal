@@ -1,6 +1,6 @@
 ﻿
 from pathlib import Path
-from io import BytesIO
+https://github.com/SAENZJORDY/aspersud-portal/tree/mainfrom io import BytesIO
 from typing import Literal
 from urllib.parse import quote
 
@@ -18,7 +18,9 @@ from googleapiclient.http import MediaIoBaseDownload
 # =========================================================
 
 BASE = Path(__file__).resolve().parent
-JSON_PATH = BASE / "secrets" / "google-drive-credentials.json"
+JSON_PATH = Path("/etc/secrets/google-drive-credentials.json")
+if not JSON_PATH.exists():
+    JSON_PATH = BASE / "secrets" / "google-drive-credentials.json"
 
 ID_GOOGLE_SHEETS = "1PcVo2saijtf_KHXmeyqI03R4PsdpVP-QMNllkh2e8AQ"
 NOMBRE_PESTANA = "Hoja 1"
